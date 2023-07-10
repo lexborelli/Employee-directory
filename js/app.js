@@ -14,7 +14,7 @@ fetch(urlAPI)
 function displayEmployees(employeeData) {
     employees = employeeData; 
 
-    let employee = '';
+    let employeeHTML = '';
     
     employees.forEach((employee, index) => {
         let name = employee.name; 
@@ -22,9 +22,9 @@ function displayEmployees(employeeData) {
         let city = employee.location.city; 
         let picture = employee.picture;
         
-            employeeHTML += `
+ employeeHTML += `
             <div class="card" data-index="${index}">
-            <img class="avatar" src="${picture.large}"/>
+            <img class="avatar" src="${picture.large}" />
             <div class="text-container">
             <h2 class="name">${name.first} ${name.last}</h2>
             <p class="email">${email}</p>
