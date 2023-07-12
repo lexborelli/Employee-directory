@@ -37,9 +37,9 @@ body {
 }
 
 hr {
-    color: #A0A0A0;
     margin-top: 25px;
     margin-bottom: 25px;
+    border: 0.5px solid #D0D0D0;
 }
 
 .modal-content p {
