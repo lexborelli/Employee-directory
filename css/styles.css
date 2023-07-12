@@ -31,12 +31,34 @@ body {
     padding: 30px 20px; 
 }
 
+.modal-content img {
+    width: 9em;
+    height: 9em;
+}
+
+hr {
+    color: #A0A0A0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.modal-content p {
+    font-size: 13px;
+    color: #A0A0A0;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
 .modal-close {
     position: absolute; 
     right: 15px; 
     top: 5px; 
-    cursor: pointer; 
+    cursor: pointer;
+    border: hidden; 
+    background-color: transparent; 
 }
+
+
 
 .hidden {
     display: none; 
@@ -78,7 +100,7 @@ main {
     grid-template-rows: 1fr;
 }
 
-.card img {
+.card img, .avatar {
     border-radius: 50%;
     padding: 15px; 
     width: 6.5em;
