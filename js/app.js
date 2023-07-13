@@ -74,4 +74,17 @@ modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden"); 
 }); 
 
+const employeeSearch = document.getElementById("employeesearch"); 
+
+employeeSearch.addEventListener('keyup', e => {
+    let currentValue = e.target.value.toLowerCase();
+    let employees = document.querySelectorAll('h2.name');
+    employees.forEach(employee => {
+        if(employee.textContent.toLowerCase().includes(currentValue)) {
+            employee.parentNode.parentNode.style.display = 'flex';
+        } else {
+            employee.parentNode.parentNode.style.display = 'none';
+        }
+    })
+});
 
