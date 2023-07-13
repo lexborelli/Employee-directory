@@ -95,8 +95,8 @@ h2 {
 
 main {
     display: grid; 
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .card img, .avatar {
@@ -126,6 +126,23 @@ main {
     align-self: center;
     width: 70%;  
     padding-left: 0;
+}
+
+.input-container {
+    display: flex; 
+    justify-content: center;
+}
+
+
+input[type=text] {
+    width: 55%;
+    align-self: center;
+    padding: 6px; 
+    border: 2px solid #dcdcdc;
+    border-radius: 15px;
+    margin-top: 25px; 
+    margin-bottom: 25px;
+    font-size: 17px;
 }
 
 @media (min-width: 768px) {
