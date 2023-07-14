@@ -74,6 +74,29 @@ modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden"); 
 }); 
 
+
+const next = document.getElementById("next");
+const prev = document.getElementById("prev"); 
+
+
+
+next.addEventListener('click', () => {
+    let containerModal = document.querySelector('.text-container-modal');
+    let index = parseInt(containerModal.getAttribute('data-index')); 
+    if(index !== employees.length - 1) {
+        index += 1;
+        displayModal(index);
+    }
+
+    prev.addEventListener('click', () => {
+        if(index !== 0) {
+            index -= 1;
+            displayModal(index);
+        }
+    });
+});
+
+
 const employeeSearch = document.getElementById("employeesearch"); 
 
 employeeSearch.addEventListener('keyup', e => {
